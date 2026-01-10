@@ -36,6 +36,21 @@
     flex-wrap: nowrap;
     gap: 16px;
   }
+
+  .topbar--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(6px);
+  
+    z-index: 1000;
+  
+    /* subtle separation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
   
   .topbar__name {
     font-weight: 800;
