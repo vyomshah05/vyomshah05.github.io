@@ -1,6 +1,6 @@
 import meImg from "../assets/me.jpg";
 import "./About.css";
-import useInView from "../hooks/useInView";
+
 export default function About() {
   return (
     <section id="about" className="about">
