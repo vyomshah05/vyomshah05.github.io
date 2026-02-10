@@ -56,6 +56,15 @@
     line-height: 1;
     
     flex: 0 0 auto;
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topbar__logo {
+    height: 1.2rem;
+    width: auto;
 }
     
 .topbar__links {
