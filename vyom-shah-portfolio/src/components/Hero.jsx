@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import heroImg from "../assets/hero.png";
 import varioImg from "../assets/vario.png";
+import varioMove from "../assets/vario_move.gif";
 import githubIcon from "../assets/icons/github.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
 import mailIcon from "../assets/icons/mail.png";
@@ -42,7 +43,7 @@ export default function Hero({ onResetAnimations }) {
             <nav className={`topbar ${scrolled ? "topbar--fixed" : ""}`}>
                 <div className="topbar__left">
                     <div className="topbar__name" onClick={handleNameClick} style={{ cursor: 'pointer' }}>
-                        <img src={varioImg} alt="Vario" className="topbar__logo" />
+                        <img src={varioMove} alt="Vario" className="topbar__logo" />
                         Vyom Shah
                     </div>
 
