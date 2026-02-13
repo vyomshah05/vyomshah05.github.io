@@ -5,8 +5,10 @@ import Zepto from "../assets/logos/zepto.png";
 import CARL from "../assets/logos/carl.png";
 import AI from "../assets/logos/aiuci.png";
 import DB from "../assets/logos/db.jpeg";
+import Cactus from "../assets/logos/cactus.png";
 
 export default function Experience() {
+    const [ref0, inView0] = useInView({ threshold: 0.1 });
     const [ref1, inView1] = useInView({ threshold: 0.1 });
     const [ref2, inView2] = useInView({ threshold: 0.1 });
     const [ref3, inView3] = useInView({ threshold: 0.1 });
@@ -16,6 +18,40 @@ export default function Experience() {
     return (
         <section id="experience" className="experience">
             <h2 className="section_title">Experience</h2>
+            <div ref={ref0} className={`experience__container reveal reveal--right ${inView0 ? 'is-visible' : ''}`}>
+                <div className="experience__company">
+                    <img src={Cactus} alt="Cactus Logo" className="experience__logo" />
+
+                    <div className="experience__details">
+                        Core Contributor
+                    </div>
+
+                    <div className="experience__date">
+                        January 2026 - Present
+                    </div>
+
+                </div>
+
+                <div className="experience__divider" />
+
+                <div className="experience__details">
+                    <div className="experience__information">
+                        <div ><strong>Accomplishments:</strong> </div>
+                        <ul>
+                            <li>Fixed FP16 NEON reduction precision bug by upcasting to FP32; added tests and validated correctness across parallel backends.</li>
+                            <li>Benchmarked and optimized FP16/INT8 kernels on Apple M2, reaching &gt;450 GFLOPS matmul and validating LLM + ASR TPS and memory metrics.</li>
+                            <li>Contributed to cross-platform ML infrastructure (macOS/iOS/Android), debugging SIMD, threading, builds, and CI workflows.</li>
+                        </ul>
+
+                        <div ><strong>Technologies:</strong> </div>
+                        <ul>
+                            C++, ARM NEON SIMD, FP16/FP32 mixed precision, INT8 quantization
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
             <div ref={ref1} className={`experience__container reveal reveal--right ${inView1 ? 'is-visible' : ''}`}>
                 <div className="experience__company">
                     <img src={Aerlync} alt="Aerlync Labs Logo" className="experience__logo" />
