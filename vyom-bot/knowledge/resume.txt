@@ -1,0 +1,140 @@
+Vyom Shah
+Sunnyvale, CA
+408-215-8301
+vyomshah005@gmail.com
+
+github.com/vyomshah05
+linkedin.com/in/vyomshah1
+
+EDUCATION
+
+University of California, Irvine — Irvine, CA
+Bachelor of Science in Computer Science
+GPA: 3.9
+September 2023 – June 2027
+
+Relevant Coursework:
+- Data Structures & Algorithms
+- Operating Systems
+- Computer Networks
+- Database Systems
+- Machine Learning
+
+TECHNICAL SKILLS
+
+Languages:
+- C
+- C++
+- C#
+- Python
+- Java
+- JavaScript
+- TypeScript
+- SQL
+- Bash
+- PowerShell
+
+Frameworks & Tools:
+- React
+- .NET Core
+- Docker
+- Kubernetes
+- Git
+- CI/CD
+- Prometheus
+- Grafana
+
+Systems & Platforms:
+- Linux
+- Unix
+- AWS
+- GCP
+- Azure
+- Windows
+- macOS
+
+EXPERIENCE
+
+Software Engineering Intern
+Aerlync Labs — Santa Clara, CA
+June 2025 – September 2025
+- Engineered embedded IoT systems in C with multi-threading, TCP/IP networking, and memory optimization, boosting system performance by 40%.
+- Automated deployment workflows using Python, Bash, PowerShell, and Node.js, reducing manual workload by 60%.
+- Integrated observability dashboards (Prometheus, Grafana) into microservices, enabling real-time debugging and traffic anomaly detection across distributed systems.
+
+AI Software Engineering Intern
+Zepto Digital Labs — Remote
+June 2024 – September 2024
+- Designed distributed, high-throughput data pipelines in Python with automated A/B testing to validate ML model performance, improving iteration speed by 35%.
+- Deployed scalable cloud inference APIs using FastAPI, Docker, and GCP with CI/CD pipelines for reliable releases.
+- Applied object-oriented programming (OOP) principles and test-driven development (TDD) to ensure maintainable, robust code.
+
+Web Developer (Freelance)
+Local Real Estate Company — Remote
+June 2025 – Present
+- Delivered a full-stack timecard and analytics web application using C#, .NET Core, and SQL, used daily by client staff to track work hours.
+- Optimized large MySQL datasets and improved schema design, reducing query time by 50%.
+- Coordinated with non-technical stakeholders to translate business requirements into scalable technical solutions.
+
+Neural Network Researcher
+Cognitive Anteater Robotics Laboratory — Irvine, CA
+January 2025 – Present
+- Simulated brain-inspired spiking neural networks in C++ using parallelization and memory-efficient algorithms, accelerating training by 20%.
+- Deployed reproducible experiments with Docker and Kubernetes on Linux, standardizing research workflows.
+- Contributed modular, documented C++ code used in peer-reviewed publications.
+
+LEARNING ASSISTANT EXPERIENCE
+
+UCI Donald Bren School of ICS — Discrete Math Lead Learning Assistant
+Irvine, CA
+December 2025 – Present
+- Onboarded and organized the upcoming learning assistant cohort for the course.
+- Participated in all learning assistant tasks listed below.
+
+UCI Donald Bren School of ICS — Boolean Logic Learning Assistant
+Irvine, CA
+September 2024 – December 2024
+- Guided students through challenging problem sets in lecture (300+ students).
+- Held personal office hours, helping students one-on-one through discrete math concepts and problems.
+- Proctored and helped organize examinations.
+- Joined weekly meetings with other learning assistants and the professor to discuss course improvements.
+
+LEADERSHIP EXPERIENCE
+
+Artificial Intelligence @ UC Irvine — Vice-President
+Irvine, California
+June 2025 – Present
+- Led and restructured a 30+ member board into specialized committees that improved project coordination, mentorship, and execution efficiency.
+- Launched partnerships with startups, research labs, and venture firms, creating hands-on AI project opportunities, internships, and events such as an AI startup hackathon hosted at Sunstone Cities VC.
+- Grew the club’s digital presence to 1,000+ followers and 10,000+ post views.
+- Organized and delivered AI workshops with 100+ participants, providing accessible, hands-on learning experiences for students at all levels.
+
+PROJECTS
+
+Measily — Full-Stack AI Web App for Diagnosis & Routing
+LA Hacks 2025
+Technologies: Python, React
+- Designed scalable backend services for real-time diagnosis and routing using Python.
+- Integrated mapping APIs, AI-driven suggestions, and secure user session management.
+
+LingoLive — Real-Time Audio Translation Chrome Extension
+LA Hacks 2024
+Technologies: Python, AWS, JavaScript
+- Built a serverless backend (AWS Lambda, AWS Polly) enabling real-time translation with under 500ms latency.
+- Developed a Chrome Extension front end using React.
+
+VroomMates — Carpooling Optimization App
+Cal Hacks 2024
+Technologies: Python, Node.js, TypeScript
+- Implemented graph-based optimization algorithms (A*, TSP) for efficient ride-sharing route planning.
+- Designed scalable REST APIs handling large geolocation datasets for real-time route computation.
+
+Zot Notes — AI Quiz Generator from Notes
+Irvine Hacks 2024
+Technologies: Python, TypeScript
+- Built a vector-search ML system for personalized quiz generation, improving retrieval accuracy by 30%.
+- Applied NLP preprocessing and statistical ranking with automated testing for consistent performance.
+
+PUBLICATIONS
+
+Niedermeier, L., Shah, V., et al. A Multi-Threading Kernel for Enabling Neuromorphic Edge Applications. October 2025.
