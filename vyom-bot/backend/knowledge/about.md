@@ -1,6 +1,6 @@
 # About Vyom Shah
 
-Hi, I’m Vyom Shah — a Computer Science student at the University of California, Irvine (GPA: 3.9), graduating June 2027.
+Hi, I’m Vyom Shah — a Computer Science student at the University of California, Irvine (GPA: 3.9).
 
 I’m passionate about building scalable systems, AI-powered applications, and performance-focused infrastructure. My work spans embedded systems, distributed ML pipelines, neuromorphic computing research, and full-stack AI applications.
 
