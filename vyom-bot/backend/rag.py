@@ -81,7 +81,8 @@ async def ollama_chat(system_prompt: str, user_message: str, context: str, histo
     }
 
     async with httpx.AsyncClient(timeout=120.0) as client:
-        r = await client.post(f"{settings.ollama_base_url}/api/chat", json=payload)
+        base = settings.ollama_base_url.rstrip("/")
+        r = await client.post(f"{base}/api/chat", json=payload) 
         r.raise_for_status()
         data = r.json()
 
