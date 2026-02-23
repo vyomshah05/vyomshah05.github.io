@@ -16,7 +16,7 @@ class Settings(BaseModel):
     collection_name: str = "vyom_knowledge"
 
     # Retrieval
-    top_k: int = 6
-    max_context_chars: int = 12000
+    top_k: int = 4
+    max_context_chars: int = 8000
 
 settings = Settings()
