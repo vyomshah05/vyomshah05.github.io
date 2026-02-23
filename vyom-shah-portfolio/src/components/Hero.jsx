@@ -9,6 +9,7 @@ import "./Hero.css";
 
 export default function Hero({ onResetAnimations }) {
     const [scrolled, setScrolled] = useState(false);
+    const [showScrollIndicator, setShowScrollIndicator] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
@@ -17,6 +18,14 @@ export default function Hero({ onResetAnimations }) {
 
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowScrollIndicator(true);
+        }, 4000);
+
+        return () => clearTimeout(timer);
     }, []);
 
     const handleNameClick = () => {
@@ -93,6 +102,21 @@ export default function Hero({ onResetAnimations }) {
                 <h1 className="hero__title">Vyom Shah</h1>
                 <p className="hero__subtitle">Software Engineer • ML/Systems • UC Irvine</p>
             </div>
+
+            {showScrollIndicator && (
+                <a className="hero__scroll-indicator" href="#about" aria-label="Scroll to About section">
+                    <span className="chev chev--top" aria-hidden="true">
+                    <svg viewBox="0 0 40 24" focusable="false">
+                    <path d="M2 8 L20 20 L38 8" />
+                    </svg>
+                    </span>
+                    <span className="chev chev--bottom" aria-hidden="true">
+                    <svg viewBox="0 0 40 24" focusable="false">
+                    <path d="M2 8 L20 20 L38 8" />
+                    </svg>
+                    </span>
+                </a>
+            )}
         </header>
     );
 }
