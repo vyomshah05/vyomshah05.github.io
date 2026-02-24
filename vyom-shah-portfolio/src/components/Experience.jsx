@@ -42,7 +42,12 @@ export default function Experience() {
                             <li>Benchmarked and optimized FP16/INT8 kernels on Apple M2, reaching &gt;450 GFLOPS matmul and validating LLM + ASR TPS and memory metrics.</li>
                             <li>Contributed to cross-platform ML infrastructure (macOS/iOS/Android), debugging SIMD, threading, builds, and CI workflows.</li>
                         </ul>
-
+                        <div ><strong>Github:</strong> </div>
+                        <ul>
+                            <a href="https://github.com/cactus-compute/cactus">
+                                Cactus Compute
+                            </a>
+                        </ul>
                         <div ><strong>Technologies:</strong> </div>
                         <ul>
                             C++, ARM NEON SIMD, FP16/FP32 mixed precision, INT8 quantization
@@ -76,7 +81,6 @@ export default function Experience() {
                             <li>Automated deployment workflows with Python, Bash, PowerShell, and Node.js, reducing manual workload by 60%</li>
                             <li>Integrated observability dashboards (Prometheus, Grafana) into microservices, enabling real-time debugging and traffic anomaly detection across distributed systems</li>
                         </ul>
-
                         <div ><strong>Technologies:</strong> </div>
                         <ul>
                             C, Python, Bash, PowerShell, Node.js, Prometheus, Grafana
