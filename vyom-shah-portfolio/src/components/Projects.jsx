@@ -10,6 +10,7 @@ import Lingo from "../assets/projects/lingo.jpg";
 import Zot from "../assets/projects/zot.jpg";
 import Gyro from "../assets/projects/gyro.png";
 import File from "../assets/projects/file_sys.png";
+import Resume from "../assets/projects/resume.png"
 
 const projects = [
     {
@@ -93,6 +94,16 @@ const projects = [
             github: "https://github.com/vyomshah05/File-System"
         },
     },
+    {
+        name: "Resume Tweaker",
+        blurb: "A LaTex Job Description-based Resume Tweaker Chrome Extension",
+        image: Resume,
+        tech: "Python, google.generativeai, React, json, web-scraping",
+        links: {
+            github: "https://github.com/vyomshah05/Resume-Tweaker",
+            demo: "https://youtu.be/BNJn_JOKxiA"
+        },
+    },
 ];
 
 export default function Projects() {
@@ -104,6 +115,7 @@ export default function Projects() {
     const [ref6, inView6] = useInView({ threshold: 0.1 });
     const [ref7, inView7] = useInView({ threshold: 0.1 });
     const [ref8, inView8] = useInView({ threshold: 0.1 });
+    const [ref9, inView9] = useInView({ threshold: 0.1 });
 
     return (
         <section id="projects" className="projects">
@@ -112,8 +124,8 @@ export default function Projects() {
 
                 <div className="projects__grid">
                     {projects.map((p, index) => {
-                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8];
-                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8];
+                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9];
+                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8, inView9];
                         
                         return (
                             <article key={p.name} ref={refs[index]} className={`projectCard reveal ${inViews[index] ? 'is-visible' : ''}`}>
