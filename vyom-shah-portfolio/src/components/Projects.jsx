@@ -10,7 +10,8 @@ import Lingo from "../assets/projects/lingo.jpg";
 import Zot from "../assets/projects/zot.jpg";
 import Gyro from "../assets/projects/gyro.png";
 import File from "../assets/projects/file_sys.png";
-import Resume from "../assets/projects/resume.png"
+import Resume from "../assets/projects/resume.png";
+import Navigator from "../assets/projects/navigator.png";
 
 const projects = [
     {
@@ -104,6 +105,15 @@ const projects = [
             demo: "https://youtu.be/BNJn_JOKxiA"
         },
     },
+    {
+        name: "NaviGator",
+        blurb: "Weather aware Intelligent event discovery and ranking system",
+        image: Navigator,
+        tech: "Python,FastAPI, google.generativeai, Firebase, React Native, Expo",
+        links: {
+            github: "https://github.com/vyomshah05/NaviGator"
+        },
+    },
 ];
 
 export default function Projects() {
@@ -116,6 +126,7 @@ export default function Projects() {
     const [ref7, inView7] = useInView({ threshold: 0.1 });
     const [ref8, inView8] = useInView({ threshold: 0.1 });
     const [ref9, inView9] = useInView({ threshold: 0.1 });
+    const [ref10, inView10] = useInView({ threshold: 0.1 });
 
     return (
         <section id="projects" className="projects">
@@ -124,8 +135,8 @@ export default function Projects() {
 
                 <div className="projects__grid">
                     {projects.map((p, index) => {
-                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9];
-                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8, inView9];
+                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10];
+                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8, inView9, inView10];
                         
                         return (
                             <article key={p.name} ref={refs[index]} className={`projectCard reveal ${inViews[index] ? 'is-visible' : ''}`}>
