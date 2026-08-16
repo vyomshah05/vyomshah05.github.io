@@ -12,8 +12,31 @@ import Gyro from "../assets/projects/gyro.png";
 import File from "../assets/projects/file_sys.png";
 import Resume from "../assets/projects/resume.png";
 import Navigator from "../assets/projects/navigator.png";
+import Lockstep from "../assets/projects/lockstep.png";
+import Residue from "../assets/projects/residue.png";
 
 const projects = [
+    {
+        name: "Lockstep",
+        blurb: "An MCP to reduce syntax-based hallucinations",
+        image: Lockstep,
+        tech: "Python, FastAPI, FastMCP, MCP, Anthropic Claude, Supabase, PostgreSQL, PostgREST, pgvector, Redis Stack, RediSearch, RedisBloom, sentence-transformers, all-MiniLM-L6-v2, KeyBERT, YAKE, NumPy, React, TypeScript, Vite, Tailwind CSS, Sentry, GitHub Actions, Render",
+        links: {
+            github: "https://github.com/vyomshah05/lockstep",
+            demo: "https://www.youtube.com/watch?v=YS1SB8UrKaA&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fvyomshah05.github.io%2F",
+            live: "https://vyomshah05.github.io/lockstep"
+        },
+    },
+    {
+        name: "Residue",
+        blurb: "A personalized acoustic intelligence app for studying",
+        image: Residue,
+        tech: "Next.js, React, Tailwind CSS, Web Audio API, Screen Capture API, MongoDB, MongoDB Atlas Vector Search, Fetch.ai uAgents, ASI1-Mini, ElevenLabs, ZETIC Melange, Python",
+        links: {
+            github: "https://github.com/MaanPatel2005/Residue",
+            demo: "https://www.youtube.com/watch?v=dgqo7zdmHD0&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F"
+        },
+    },
     {
         name: "Measily",
         blurb: "An interactive medical diagnostic platform",
@@ -127,6 +150,8 @@ export default function Projects() {
     const [ref8, inView8] = useInView({ threshold: 0.1 });
     const [ref9, inView9] = useInView({ threshold: 0.1 });
     const [ref10, inView10] = useInView({ threshold: 0.1 });
+    const [ref11, inView11] = useInView({ threshold: 0.1 });
+    const [ref12, inView12] = useInView({ threshold: 0.1 });
 
     return (
         <section id="projects" className="projects">
@@ -135,8 +160,8 @@ export default function Projects() {
 
                 <div className="projects__grid">
                     {projects.map((p, index) => {
-                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10];
-                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8, inView9, inView10];
+                        const refs = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12];
+                        const inViews = [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8, inView9, inView10, inView11, inView12];
                         
                         return (
                             <article key={p.name} ref={refs[index]} className={`projectCard reveal ${inViews[index] ? 'is-visible' : ''}`}>
@@ -171,6 +196,11 @@ export default function Projects() {
                                         {p.links?.demo && (
                                             <a href={p.links.demo} target="_blank" rel="noreferrer">
                                                 Demo Video
+                                            </a>
+                                        )}
+                                        {p.links?.live && (
+                                            <a href={p.links.live} target="_blank" rel="noreferrer">
+                                                Live Site
                                             </a>
                                         )}
                                     </div>

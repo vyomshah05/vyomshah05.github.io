@@ -6,8 +6,10 @@ import CARL from "../assets/logos/carl.png";
 import AI from "../assets/logos/aiuci.png";
 import DB from "../assets/logos/db.jpeg";
 import Cactus from "../assets/logos/cactus.png";
+import Brex from "../assets/logos/brex.png";
 
 export default function Experience() {
+    const [refBrex, inViewBrex] = useInView({ threshold: 0.1 });
     const [ref0, inView0] = useInView({ threshold: 0.1 });
     const [ref1, inView1] = useInView({ threshold: 0.1 });
     const [ref2, inView2] = useInView({ threshold: 0.1 });
@@ -18,6 +20,38 @@ export default function Experience() {
     return (
         <section id="experience" className="experience">
             <h2 className="section_title">Experience</h2>
+            <div ref={refBrex} className={`experience__container reveal reveal--right ${inViewBrex ? 'is-visible' : ''}`}>
+                <div className="experience__company">
+                    <img src={Brex} alt="Brex Logo" className="experience__logo" />
+
+                    <div className="experience__details">
+                        Software Engineer Intern
+                    </div>
+
+                    <div className="experience__date">
+                        June 2026 - September 2026
+                    </div>
+
+                </div>
+
+                <div className="experience__divider" />
+
+                <div className="experience__details">
+                    <div className="experience__information">
+                        <div ><strong>Accomplishments:</strong> </div>
+                        <ul>
+                            <li>Built user-facing backend services in Kotlin and GraphQL powering internal search and filtering experiences</li>
+                            <li>Trained a PyTorch learning-to-rank model that computes smart filter weights, improving relevance of ranked results using Python</li>
+                            <li>Designed weight computation as an asynchronous JobRunr background task, decoupling model scoring from request-time latency</li>
+                        </ul>
+                        <div ><strong>Technologies:</strong> </div>
+                        <ul>
+                            Python, Kotlin, GraphQL, PyTorch, JobRunr
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div ref={ref0} className={`experience__container reveal reveal--right ${inView0 ? 'is-visible' : ''}`}>
                 <div className="experience__company">
                     <img src={Cactus} alt="Cactus Logo" className="experience__logo" />
@@ -27,7 +61,7 @@ export default function Experience() {
                     </div>
 
                     <div className="experience__date">
-                        January 2026 - Present
+                        January 2026 - April 2026
                     </div>
 
                 </div>
@@ -184,11 +218,11 @@ export default function Experience() {
                 <div className="experience__company">
                     <img src={AI} alt="AI UCI Logo" className="experience__logo" />
                     <div className="experience__details">
-                        Vice President
+                        President
                     </div>
 
                     <div className="experience__date">
-                        May 2025 - Present
+                        May 2025 - June 2026
                     </div>
 
                 </div>

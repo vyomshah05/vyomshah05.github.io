@@ -16,7 +16,7 @@ export default function About() {
           <h2 className="about__title">About Me</h2>
 
           <p className="about__text">
-            I’m a Computer Science undergraduate at UC Irvine with a strong focus
+            I’m a Software Engineer and Computer Science graduate of UC Irvine with a strong focus
             on software engineering, machine learning, and systems. I’ve worked
             across backend development, distributed systems, and applied AI,
             building production-ready software through internships and research.
