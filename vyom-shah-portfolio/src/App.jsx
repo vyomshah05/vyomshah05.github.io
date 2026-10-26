@@ -18,8 +18,8 @@ export default function App() {
     <>
       <Hero onResetAnimations={resetAnimations} />
       <About key={`about-${animationKey}`} />
-      <Education key={`education-${animationKey}`} />
       <Experience key={`experience-${animationKey}`} />
+      <Education key={`education-${animationKey}`} />
       <Projects key={`projects-${animationKey}`} />
     </>
   )

@@ -7,8 +7,10 @@ import AI from "../assets/logos/aiuci.png";
 import DB from "../assets/logos/db.jpeg";
 import Cactus from "../assets/logos/cactus.png";
 import Brex from "../assets/logos/brex.png";
+import AWS from "../assets/logos/aws.png";
 
 export default function Experience() {
+    const [refAWS, inViewAWS] = useInView({ threshold: 0.1 });
     const [refBrex, inViewBrex] = useInView({ threshold: 0.1 });
     const [ref0, inView0] = useInView({ threshold: 0.1 });
     const [ref1, inView1] = useInView({ threshold: 0.1 });
@@ -20,6 +22,38 @@ export default function Experience() {
     return (
         <section id="experience" className="experience">
             <h2 className="section_title">Experience</h2>
+            <div ref={refAWS} className={`experience__container reveal reveal--right ${inViewAWS ? 'is-visible' : ''}`}>
+                <div className="experience__company">
+                    <img src={AWS} alt="Amazon Web Services Logo" className="experience__logo" />
+
+                    <div className="experience__details">
+                        Software Development Engineer Intern
+                    </div>
+
+                    <div className="experience__date">
+                        2026 - Present
+                    </div>
+
+                </div>
+
+                <div className="experience__divider" />
+
+                <div className="experience__details">
+                    <div className="experience__information">
+                        <div ><strong>Accomplishments:</strong> </div>
+                        <ul>
+                            <li>Building cloud infrastructure for AI development environments, provisioning sandboxed compute for an internal developer platform used by over 80,000 engineers</li>
+                            <li>Developing Java services on AWS CDK, Lambda, and DynamoDB with automated tests, metrics, and alarms for production reliability</li>
+                            <li>Writing design docs and shipping changes through code review and multi-region pipeline deployments</li>
+                        </ul>
+                        <div ><strong>Technologies:</strong> </div>
+                        <ul>
+                            Java, AWS CDK, AWS Lambda, DynamoDB
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div ref={refBrex} className={`experience__container reveal reveal--right ${inViewBrex ? 'is-visible' : ''}`}>
                 <div className="experience__company">
                     <img src={Brex} alt="Brex Logo" className="experience__logo" />
