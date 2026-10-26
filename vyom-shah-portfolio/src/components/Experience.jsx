@@ -31,7 +31,7 @@ export default function Experience() {
                     </div>
 
                     <div className="experience__date">
-                        2026 - Present
+                        September 2026 - Present
                     </div>
 
                 </div>
